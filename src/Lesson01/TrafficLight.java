@@ -17,6 +17,30 @@ public class TrafficLight {
         this.cycle = greenTimer + yellowTimer + redTimer;
     }
 
+    public int getGreenTimer() {
+        return greenTimer;
+    }
+
+    public void setGreenTimer(int greenTimer) {
+        this.greenTimer = greenTimer;
+    }
+
+    public int getYellowTimer() {
+        return yellowTimer;
+    }
+
+    public void setYellowTimer(int yellowTimer) {
+        this.yellowTimer = yellowTimer;
+    }
+
+    public int getRedTimer() {
+        return redTimer;
+    }
+
+    public void setRedTimer(int redTimer) {
+        this.redTimer = redTimer;
+    }
+
     public void light(){
         int seconds = 0;
         int minutes = 0;
@@ -43,36 +67,5 @@ public class TrafficLight {
                 e.printStackTrace();
             }
         }
-    }
-
-    public int getGreenTimer() {
-        return greenTimer;
-    }
-
-    public void setGreenTimer(int greenTimer) {
-        this.greenTimer = greenTimer;
-    }
-
-    public int getYellowTimer() {
-        return yellowTimer;
-    }
-
-    public void setYellowTimer(int yellowTimer) {
-        this.yellowTimer = yellowTimer;
-    }
-
-    public int getRedTimer() {
-        return redTimer;
-    }
-
-    public void setRedTimer(int redTimer) {
-        this.redTimer = redTimer;
-    }
-
-    public static void main(String[] args) {
-        TrafficLight tf = new TrafficLight(Integer.parseInt(args[0]),
-                Integer.parseInt(args[1]),
-                Integer.parseInt(args[2]));
-        tf.light();
     }
 }
