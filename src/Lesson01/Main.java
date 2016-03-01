@@ -10,6 +10,4 @@ public class Main {
                 Integer.parseInt(args[2]));
         tf.light();
     }
-
-
 }
