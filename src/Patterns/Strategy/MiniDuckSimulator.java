@@ -1,4 +1,4 @@
-package Duck;
+package Patterns.Strategy;
 
 /**
  * Created by enibeni on 28.02.16.
