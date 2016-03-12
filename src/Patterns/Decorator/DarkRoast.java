@@ -1,7 +1,13 @@
 package Patterns.Decorator;
 
-/**
- * Created by s.morozov on 02.03.2016.
- */
-public class DarkRoast {
+
+public class DarkRoast extends Beverage {
+    public DarkRoast() {
+        description = "darkroast";
+    }
+
+    @Override
+    public double cost() {
+        return 1.19;
+    }
 }

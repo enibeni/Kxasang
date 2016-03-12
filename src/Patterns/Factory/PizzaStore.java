@@ -1,7 +1,21 @@
 package Patterns.Factory;
 
-/**
- * Created by s.morozov on 03.03.2016.
- */
-public class PizzaStore {
+
+public abstract class PizzaStore {
+    SimplePizzaFactory factory;
+
+    public Pizza orderPizza(String type) {
+        Pizza pizza;
+        pizza = createPizza(type);
+        pizza.prepare();
+        pizza.bake();
+        pizza.cut();
+        pizza.box();
+        return pizza;
+    }
+
+    abstract Pizza createPizza(String type);
+
+// other methods here
 }
+

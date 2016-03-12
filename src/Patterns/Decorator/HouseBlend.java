@@ -1,7 +1,10 @@
 package Patterns.Decorator;
 
-/**
- * Created by s.morozov on 02.03.2016.
- */
-public class HouseBlend {
+public class HouseBlend extends Beverage {
+    public HouseBlend() {
+        description = "House Blend Coffee";
+    }
+    public double cost() {
+        return .89;
+    }
 }
